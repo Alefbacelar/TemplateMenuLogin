@@ -8,7 +8,7 @@ $bg-atalho-breadcrum: #fafafa;
 $bg-dash: #f4f4f4;
 $verde-logo: #00ed77;
 $violeta-logo: #4e7bf0;
-$buttons: #24b499;
+$buttons: #34a59e;
 $font-logo: "Comfortaa", cursive;
 
 .container {
@@ -24,7 +24,7 @@ $font-logo: "Comfortaa", cursive;
 
   font-family: "Rubik", sans-serif;
 
-  background: linear-gradient(to top, #000000, #1f2c3a);
+  background: linear-gradient(to top, #000000, #3295ff);
   border-top-width: 2px;
   border-top-style: solid;
   border-image: linear-gradient(to right, $verde-logo, $violeta-logo) 1;
@@ -37,14 +37,7 @@ $font-logo: "Comfortaa", cursive;
 
   img {
     width: 200px;
-    // height: auto;
   }
-  // p {
-  //   font-size: 50px;
-  //   color: #ffffff;
-  //   font-family: "Comfortaa", cursive;
-  //   margin: 0;
-  // }
 }
 
 .cardHeader {
