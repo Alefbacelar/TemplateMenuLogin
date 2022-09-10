@@ -1,0 +1,104 @@
+<app-nav></app-nav>
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="menuColor border-right" id="sidebar-wrapper" [ngClass]="status ? 'hide' : 'show'">
+    <div class="sidebar-heading menuTitle">Menu</div>
+
+    <!-- MENU LINKS -->
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+
+      <!-- MENU REDE SOCIAL -->
+      <div class="accordion-item navLink">
+        <h2 class="accordion-header" id="flush-headingRedeSocial">
+          <button class="accordion-button collapsed navLink" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseRedeSocial" aria-expanded="false" aria-controls="flush-collapseRedeSocial">
+            Teste 1
+          </button>
+        </h2>
+        <div id="flush-collapseRedeSocial" class="accordion-collapse collapse" aria-labelledby="flush-headingRedeSocial"
+          data-bs-parent="#accordionFlushExample">
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['rede-social/list-produto']">Teste 1.1</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['rede-social/list-plataforma']">Teste 1.2</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['rede-social/list-formato']">Teste 1.3</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['rede-social/list-tabela-de-precos']">Teste 1.4</a>
+        </div>
+      </div>
+
+      <!-- MENU SITE -->
+      <div class="accordion-item navLink">
+        <h2 class="accordion-header" id="flush-headingSite">
+          <button class="accordion-button collapsed navLink" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseSite" aria-expanded="false" aria-controls="flush-collapseSite">
+            Teste 2
+          </button>
+        </h2>
+        <div id="flush-collapseSite" class="accordion-collapse collapse" aria-labelledby="flush-headingSite"
+          data-bs-parent="#accordionFlushExample">
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['site/list-posicao']">Teste 2.1</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['site/list-peca-site']">Teste 2.2</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['site/list-dimensao']">Teste 2.3</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['site/list-tipo-de-compra']">Teste 2.4</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink" routerLinkActive="active"
+            [routerLink]="['site/list-tabela-de-precos']">Teste 2.5</a>
+        </div>
+      </div>
+
+      <!-- Menu CADASTROS -->
+      <div class="accordion-item navLink">
+        <h2 class="accordion-header" id="flush-headingCadastros">
+          <button class="accordion-button collapsed navLink" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseCadastros" aria-expanded="false" aria-controls="flush-collapseCadastros">
+            Teste 3
+          </button>
+        </h2>
+        <div id="flush-collapseCadastros" class="accordion-collapse collapse" aria-labelledby="flush-headingCadastros"
+          data-bs-parent="#accordionFlushExample">
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-agencia']" routerLinkActive="active">Teste 3.1</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-cliente']" routerLinkActive="active">Teste 3.2</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-veiculo']" routerLinkActive="active">Teste 3.3</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-tipo-plano-de-insercao']" routerLinkActive="active">Teste 3.4</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-campanha']" routerLinkActive="active">Teste 3.5</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-produto']" routerLinkActive="active">Teste 3.6</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-condicoes-de-pagamento']" routerLinkActive="active">Teste 3.7</a>
+          <a class="accordion-body list-group-item list-group-item-action navLink"
+            [routerLink]="['cadastros/list-tipo-de-venda']" routerLinkActive="active">Teste 3.8.</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="list-group list-group-flush"></div>
+  </div>
+
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container-fluid">
+        <button class="btn buttonCollapse" >sas
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav> -->
+    <div class="container-fluid">
+      <router-outlet></router-outlet>
+
+      <!-- Conteudo-->
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
